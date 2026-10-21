@@ -123,3 +123,15 @@ figcaption::before{content:"";width:.5rem;height:.5rem;border-radius:50%;backgro
 @media(max-width:560px){.top .wrap{height:60px}.card h3{font-size:1.15rem}.body{padding:1.2rem}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition-duration:.01ms!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
 img.cover{object-fit:cover;display:block}
+
+/* Виправлення для телефонів */
+html,body{overflow-x:clip}
+.feed-head > div,.tools{min-width:0;max-width:100%}
+.tools{width:100%}
+.chips{flex-wrap:wrap;overflow:visible;min-width:0}
+.search{width:100%}
+
+@media(min-width:820px){
+  .tools{width:auto}
+  .search{width:240px}
+}
